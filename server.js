@@ -7,10 +7,7 @@ const app = express();
 const PORT = 3000;
 
 // CORS 설정
-app.use(cors({
-  origin: "http://127.0.0.1:9000"
-}));
-
+app.use(cors());
 // body 데이터 파싱
 app.use(express.text());
 
